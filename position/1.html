@@ -6,19 +6,76 @@
     <title>Document</title>
 </head>
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     body{
         background-color: skyblue;
         margin: 0;
     }
-.temp{
-    background-color: blueviolet;
-}
+    .temp{
+        background-color: blueviolet;
+        height: 100px;
+        width: 50vw;
+        opacity: 0.4; 
+    }
 
+    .outer, .inner{
+        border: solid;
+        margin: auto;
+        width: 70%;
+    }
+
+    .outer{
+        height: 500px;
+        margin-top: 7rem;
+        /* position: relative; */
+        /* z-index: -1; */
+    }
+
+    .inner{
+        height: 70%;
+        margin-top: 5rem;
+        /* position: relative; */
+        /* z-index: -1; */
+    }
+
+    button{
+        font-size: 1.4rem;
+    }
+
+    #static{
+        margin-left: 5rem;
+        /* position: static; */
+        /* Default position is  static*/
+    }
+
+    #relative{
+        position: relative;
+
+        left: 10px;
+        bottom: 100px;
+        /* right: 50px; */
+        /* top: 500px; */
+        /* bottom: 500px; */
+        /* 
+        1. With amy position other than static we get 4 new options available:
+        top, left, bottom, right
+        2. With any position other than static, the object 'comes out of the canvas' and it can float over the other objects using top, left, bottom or right.
+        */
+    }
+
+    #absolute{
+        position: absolute;
+        width: 120px;
+        height: 40px;
+
+        /* The object moves with respect to its parent whose position is realtive */
+
+        /* bottom: 10px; */
+        /* left: 10px; */
+        /* top: 10px; */
+        /* right: 10px; */
+        left: -30px;
+
+    }
 
 </style>
 <body>
