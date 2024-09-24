@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*div{
+        font-size: 1.4rem;
+        width: 200px;
+        text-align: center;
+    }
+    .a1{
+        background-color: orange;
+    }
+    .a3{
+        background-color: green;
+    }*/
+
+    /* After - Before */
+
+    div::before{
+        content: "I";
+        font-size: 1.4rem;
+        width: 200px;
+        text-align: center;
+        background-color: orange;
+        display: block;
+    }
+
+    div::after{
+        content: "India";
+        font-size: 1.4rem;
+        width: 200px;
+        text-align: center;
+        background-color: green;
+        display: block;
+    }
+
+    div{
+        font-size: 1.4rem;
+        width: 200px;
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- <div class="a1">I</div> -->
+    <div class="a2">Love</div>
+    <!-- <div class="a3">India</div> -->
+</body>
+</html>
